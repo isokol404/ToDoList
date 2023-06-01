@@ -11,21 +11,25 @@ URL Parameters
 task_id (required): The ID of the task to be edited.
 ### Request Parameters
 
+```
 {
   "username": "new_username",
   "email": "new_email@example.com",
   "text": "Updated task text"
 }
+```
 
 ### Example Request
 
 PUT /api/tasks/123
 Content-Type: application/json
 
+```
 {
   "username": "new_username",
   "text": "Updated task text"
 }
+```
 
 ### Response
 
@@ -54,6 +58,7 @@ Response
 Status Code: 200 OK
 Response Body:
 
+```
 {
   "tasks": [
     {
@@ -75,6 +80,7 @@ Response Body:
   ],
   "total_task_count": 2
 }
+```
 
 ## Method: toggle_task_status
 
@@ -99,20 +105,21 @@ URL Parameters
 task_id (required): The ID of the task to edit.
 
 ### Request Parameters
-
+```
 {
   "text": "New task text"
 }
+```
 
 ### Example Request
 
 PUT /api/tasks/123/edit-text
 Content-Type: application/json
-
+```
 {
   "text": "New task text"
 }
-
+```
 ### Response
 
 Status Code: 200 OK
