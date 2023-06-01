@@ -61,14 +61,16 @@ Response Body:
       "username": "user1",
       "email": "user1@example.com",
       "text": "Task 1",
-      "status": "completed"
+      "status": "completed",
+      "edited_by_admin": true
     },
     {
       "id": 2,
       "username": "user2",
       "email": "user2@example.com",
       "text": "Task 2",
-      "status": "completed"
+      "status": "completed",
+      "edited_by_admin": false
     }
   ],
   "total_task_count": 2
